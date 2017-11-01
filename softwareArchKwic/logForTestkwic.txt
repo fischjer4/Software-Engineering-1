@@ -1,0 +1,2520 @@
+
+--START TIME: 1478548661.43 
+     --INPUT-- 
+                     "Design is hard.\nLet's just implement." {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Design is hard.', "Let's just implement."] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['is', 'hard.', 'Design'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (["Let's", 'just', 'implement.'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (['implement.', "Let's", 'just'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (['implement.', "Let's", 'just'], 1) 
+                     (['is', 'hard.', 'Design'], 0) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (["Let's", 'just', 'implement.'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.44 
+     --INPUT-- 
+                     "Design is hard.\nLet's just implement." {'ignoreWords': ['is']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Design is hard.', "Let's just implement."] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (["Let's", 'just', 'implement.'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (['implement.', "Let's", 'just'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (['implement.', "Let's", 'just'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (["Let's", 'just', 'implement.'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.45 
+     --INPUT-- 
+                     "Design is hard.\nLet's just implement." {'listPairs': True, 'ignoreWords': ['is']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Design is hard.', "Let's just implement."] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (["Let's", 'just', 'implement.'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (['implement.', "Let's", 'just'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (['implement.', "Let's", 'just'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (["Let's", 'just', 'implement.'], 1) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548661.47 
+     --INPUT-- 
+                     'Hello there.\nHello there, buddy.\nHello and goodbye, buddy.\nHello is like buddy Goodbye!' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Hello there.', 'Hello there, buddy.', 'Hello and goodbye, buddy.', 'Hello is like buddy Goodbye!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Hello', 'there.'], 0) 
+                     (['there.', 'Hello'], 0) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['Hello', 'there.'], 0) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['there.', 'Hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('buddy', 'goodbye'), 2) 
+                     (('buddy', 'hello'), 3) 
+                     (('goodbye', 'hello'), 2) 
+                     (('hello', 'there'), 2) 
+--END TIME-- 0.00300002098083 seconds --- 
+ 
+
+--START TIME: 1478548661.49 
+     --INPUT-- 
+                     'Hello there.  Hello there, buddy.    Hello and goodbye, buddy. Hello is like buddy Goodbye!' {'periodsToBreaks': True, 'listPairs': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ['Hello there.', ' Hello there, buddy.', '   Hello and goodbye, buddy.', 'Hello is like buddy Goodbye!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Hello', 'there.'], 0) 
+                     (['there.', 'Hello'], 0) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['Hello', 'there.'], 0) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['there.', 'Hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('buddy', 'goodbye'), 2) 
+                     (('buddy', 'hello'), 3) 
+                     (('goodbye', 'hello'), 2) 
+                     (('hello', 'there'), 2) 
+--END TIME-- 0.00300002098083 seconds --- 
+ 
+
+--START TIME: 1478548661.51 
+     --INPUT-- 
+                     '. . a' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['. . a'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.53 
+     --INPUT-- 
+                     '. . a' {'periodsToBreaks': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ['. . a'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.54 
+     --INPUT-- 
+                     '. A B\n. A B C\n. A B C D' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['. A B', '. A B C', '. A B C D'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', 'A', 'B'], 0) 
+                     (['A', 'B', '.'], 0) 
+                     (['B', '.', 'A'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', 'A', 'B'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', '.'], 0) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', '.', 'A'], 0) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('a', 'b'), 3) 
+                     (('a', 'c'), 2) 
+                     (('b', 'c'), 2) 
+--END TIME-- 0.00200009346008 seconds --- 
+ 
+
+--START TIME: 1478548661.56 
+     --INPUT-- 
+                     'Hello world. This is a test\nhopefully it turns out okay' {'periodsToBreaks': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ['Hello world.', 'This is a test hopefully it turns out okay'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Hello', 'world.'], 0) 
+                     (['world.', 'Hello'], 0) 
+                     (['This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay'], 1) 
+                     (['is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This'], 1) 
+                     (['a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is'], 1) 
+                     (['test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a'], 1) 
+                     (['hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test'], 1) 
+                     (['it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully'], 1) 
+                     (['turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it'], 1) 
+                     (['out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns'], 1) 
+                     (['okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is'], 1) 
+                     (['Hello', 'world.'], 0) 
+                     (['hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test'], 1) 
+                     (['is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This'], 1) 
+                     (['it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully'], 1) 
+                     (['okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out'], 1) 
+                     (['out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns'], 1) 
+                     (['test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a'], 1) 
+                     (['This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay'], 1) 
+                     (['turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it'], 1) 
+                     (['world.', 'Hello'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.58 
+     --INPUT-- 
+                     "It's very nice to be footloose. \nWith just a toothbrush and a comb.\n" {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ["It's very nice to be footloose. ", 'With just a toothbrush and a comb.', ''] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548661.61 
+     --INPUT-- 
+                     "It's very nice to be footloose. \nWith just a toothbrush and a comb.\n" {'periodsToBreaks': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ["It's very nice to be footloose.", ' With just a toothbrush and a comb.', ''] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548661.63 
+     --INPUT-- 
+                     'hello here, hello there, hello everywhere' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello here, hello there, hello everywhere'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'here,', 'hello', 'there,', 'hello', 'everywhere'], 0) 
+                     (['here,', 'hello', 'there,', 'hello', 'everywhere', 'hello'], 0) 
+                     (['hello', 'there,', 'hello', 'everywhere', 'hello', 'here,'], 0) 
+                     (['there,', 'hello', 'everywhere', 'hello', 'here,', 'hello'], 0) 
+                     (['hello', 'everywhere', 'hello', 'here,', 'hello', 'there,'], 0) 
+                     (['everywhere', 'hello', 'here,', 'hello', 'there,', 'hello'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['everywhere', 'hello', 'here,', 'hello', 'there,', 'hello'], 0) 
+                     (['hello', 'everywhere', 'hello', 'here,', 'hello', 'there,'], 0) 
+                     (['hello', 'here,', 'hello', 'there,', 'hello', 'everywhere'], 0) 
+                     (['hello', 'there,', 'hello', 'everywhere', 'hello', 'here,'], 0) 
+                     (['here,', 'hello', 'there,', 'hello', 'everywhere', 'hello'], 0) 
+                     (['there,', 'hello', 'everywhere', 'hello', 'here,', 'hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.0019998550415 seconds --- 
+ 
+
+--START TIME: 1478548661.65 
+     --INPUT-- 
+                     'hello here\nhello here again\nhello again' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello here', 'hello here again', 'hello again'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'here'], 0) 
+                     (['here', 'hello'], 0) 
+                     (['hello', 'here', 'again'], 1) 
+                     (['here', 'again', 'hello'], 1) 
+                     (['again', 'hello', 'here'], 1) 
+                     (['hello', 'again'], 2) 
+                     (['again', 'hello'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['again', 'hello'], 2) 
+                     (['again', 'hello', 'here'], 1) 
+                     (['hello', 'again'], 2) 
+                     (['hello', 'here'], 0) 
+                     (['hello', 'here', 'again'], 1) 
+                     (['here', 'again', 'hello'], 1) 
+                     (['here', 'hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('again', 'hello'), 2) 
+                     (('hello', 'here'), 2) 
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548661.67 
+     --INPUT-- 
+                     'hello hello hello\nhello hello' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello hello hello', 'hello hello'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548661.69 
+     --INPUT-- 
+                     'to be or not to be' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['to be or not to be'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['to', 'be', 'or', 'not', 'to', 'be'], 0) 
+                     (['be', 'or', 'not', 'to', 'be', 'to'], 0) 
+                     (['or', 'not', 'to', 'be', 'to', 'be'], 0) 
+                     (['not', 'to', 'be', 'to', 'be', 'or'], 0) 
+                     (['to', 'be', 'to', 'be', 'or', 'not'], 0) 
+                     (['be', 'to', 'be', 'or', 'not', 'to'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['be', 'or', 'not', 'to', 'be', 'to'], 0) 
+                     (['be', 'to', 'be', 'or', 'not', 'to'], 0) 
+                     (['not', 'to', 'be', 'to', 'be', 'or'], 0) 
+                     (['or', 'not', 'to', 'be', 'to', 'be'], 0) 
+                     (['to', 'be', 'or', 'not', 'to', 'be'], 0) 
+                     (['to', 'be', 'to', 'be', 'or', 'not'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548661.71 
+     --INPUT-- 
+                     '. A B\n. A B C\n. A B C D' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['. A B', '. A B C', '. A B C D'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', 'A', 'B'], 0) 
+                     (['A', 'B', '.'], 0) 
+                     (['B', '.', 'A'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', 'A', 'B'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', '.'], 0) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', '.', 'A'], 0) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('a', 'b'), 3) 
+                     (('a', 'c'), 2) 
+                     (('b', 'c'), 2) 
+--END TIME-- 0.00300002098083 seconds --- 
+ 
+
+--START TIME: 1478548661.73 
+     --INPUT-- 
+                     'a bad\ncat barks.' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['a bad', 'cat barks.'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['a', 'bad'], 0) 
+                     (['bad', 'a'], 0) 
+                     (['cat', 'barks.'], 1) 
+                     (['barks.', 'cat'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'bad'], 0) 
+                     (['bad', 'a'], 0) 
+                     (['barks.', 'cat'], 1) 
+                     (['cat', 'barks.'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.75 
+     --INPUT-- 
+                     'This is not a sentence.\nNeither is this.' {'ignoreWords': ['is.']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This is not a sentence.', 'Neither is this.'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['is', 'not', 'a', 'sentence.', 'This'], 0) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['is', 'this.', 'Neither'], 1) 
+                     (['this.', 'Neither', 'is'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['is', 'not', 'a', 'sentence.', 'This'], 0) 
+                     (['is', 'this.', 'Neither'], 1) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['this.', 'Neither', 'is'], 1) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548661.78 
+     --INPUT-- 
+                     'This is not a sentence.\nNeither is this.' {'ignoreWords': ['is']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This is not a sentence.', 'Neither is this.'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['this.', 'Neither', 'is'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['this.', 'Neither', 'is'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.8 
+     --INPUT-- 
+                     'hello hello\nhello hello' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello hello', 'hello hello'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.83 
+     --INPUT-- 
+                     '#!good morning' {'ignoreWords': ['!good']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['#!good morning'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['#!good', 'morning'], 0) 
+                     (['morning', '#!good'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['#!good', 'morning'], 0) 
+                     (['morning', '#!good'], 0) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548661.85 
+     --INPUT-- 
+                     'go!od morning-!' {'ignoreWords': ['good']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['go!od morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['morning-!', 'go!od'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['morning-!', 'go!od'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.87 
+     --INPUT-- 
+                     '#!good morning-!' {'ignoreWords': ['!GoOd']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['#!good morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['#!good', 'morning-!'], 0) 
+                     (['morning-!', '#!good'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['#!good', 'morning-!'], 0) 
+                     (['morning-!', '#!good'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.89 
+     --INPUT-- 
+                     '?!good morning-!' {'ignoreWords': ['!GoOd']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['?!good morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['?!good', 'morning-!'], 0) 
+                     (['morning-!', '?!good'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['?!good', 'morning-!'], 0) 
+                     (['morning-!', '?!good'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.91 
+     --INPUT-- 
+                     '?!go!!!od morning-!' {'ignoreWords': ['!GoOd']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['?!go!!!od morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['?!go!!!od', 'morning-!'], 0) 
+                     (['morning-!', '?!go!!!od'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['?!go!!!od', 'morning-!'], 0) 
+                     (['morning-!', '?!go!!!od'], 0) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548661.93 
+     --INPUT-- 
+                     'This pair? is good.\n So is this pair and that pair' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This pair? is good.', ' So is this pair and that pair'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('is', 'pair'), 2) 
+                     (('is', 'this'), 2) 
+                     (('pair', 'this'), 2) 
+--END TIME-- 0.0019998550415 seconds --- 
+ 
+
+--START TIME: 1478548661.96 
+     --INPUT-- 
+                     'CS is cool' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['CS is cool'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['CS', 'is', 'cool'], 0) 
+                     (['is', 'cool', 'CS'], 0) 
+                     (['cool', 'CS', 'is'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['cool', 'CS', 'is'], 0) 
+                     (['CS', 'is', 'cool'], 0) 
+                     (['is', 'cool', 'CS'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548661.98 
+     --INPUT-- 
+                     'a b\na b c\na b c d' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['a b', 'a b c', 'a b c d'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['a', 'b'], 0) 
+                     (['b', 'a'], 0) 
+                     (['a', 'b', 'c'], 1) 
+                     (['b', 'c', 'a'], 1) 
+                     (['c', 'a', 'b'], 1) 
+                     (['a', 'b', 'c', 'd'], 2) 
+                     (['b', 'c', 'd', 'a'], 2) 
+                     (['c', 'd', 'a', 'b'], 2) 
+                     (['d', 'a', 'b', 'c'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'b'], 0) 
+                     (['a', 'b', 'c'], 1) 
+                     (['a', 'b', 'c', 'd'], 2) 
+                     (['b', 'a'], 0) 
+                     (['b', 'c', 'a'], 1) 
+                     (['b', 'c', 'd', 'a'], 2) 
+                     (['c', 'a', 'b'], 1) 
+                     (['c', 'd', 'a', 'b'], 2) 
+                     (['d', 'a', 'b', 'c'], 2) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('a', 'b'), 3) 
+                     (('a', 'c'), 2) 
+                     (('b', 'c'), 2) 
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548662.01 
+     --INPUT-- 
+                     'This pair? is good.\n So is this pair and that pair' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This pair? is good.', ' So is this pair and that pair'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('is', 'pair'), 2) 
+                     (('is', 'this'), 2) 
+                     (('pair', 'this'), 2) 
+--END TIME-- 0.00200009346008 seconds --- 
+ 
+
+--START TIME: 1478548662.04 
+     --INPUT-- 
+                     '' {'listPairs': True} 
+     --INFO--     Length of document is zero 
+
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548683.37 
+     --INPUT-- 
+                     "Design is hard.\nLet's just implement." {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Design is hard.', "Let's just implement."] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['is', 'hard.', 'Design'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (["Let's", 'just', 'implement.'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (['implement.', "Let's", 'just'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (['implement.', "Let's", 'just'], 1) 
+                     (['is', 'hard.', 'Design'], 0) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (["Let's", 'just', 'implement.'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548683.4 
+     --INPUT-- 
+                     "Design is hard.\nLet's just implement." {'ignoreWords': ['is']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Design is hard.', "Let's just implement."] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (["Let's", 'just', 'implement.'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (['implement.', "Let's", 'just'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (['implement.', "Let's", 'just'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (["Let's", 'just', 'implement.'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548683.42 
+     --INPUT-- 
+                     "Design is hard.\nLet's just implement." {'listPairs': True, 'ignoreWords': ['is']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Design is hard.', "Let's just implement."] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (["Let's", 'just', 'implement.'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (['implement.', "Let's", 'just'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (['implement.', "Let's", 'just'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (["Let's", 'just', 'implement.'], 1) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548683.45 
+     --INPUT-- 
+                     'Hello there.\nHello there, buddy.\nHello and goodbye, buddy.\nHello is like buddy Goodbye!' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Hello there.', 'Hello there, buddy.', 'Hello and goodbye, buddy.', 'Hello is like buddy Goodbye!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Hello', 'there.'], 0) 
+                     (['there.', 'Hello'], 0) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['Hello', 'there.'], 0) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['there.', 'Hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('buddy', 'goodbye'), 2) 
+                     (('buddy', 'hello'), 3) 
+                     (('goodbye', 'hello'), 2) 
+                     (('hello', 'there'), 2) 
+--END TIME-- 0.00299978256226 seconds --- 
+ 
+
+--START TIME: 1478548683.48 
+     --INPUT-- 
+                     'Hello there.  Hello there, buddy.    Hello and goodbye, buddy. Hello is like buddy Goodbye!' {'periodsToBreaks': True, 'listPairs': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ['Hello there.', ' Hello there, buddy.', '   Hello and goodbye, buddy.', 'Hello is like buddy Goodbye!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Hello', 'there.'], 0) 
+                     (['there.', 'Hello'], 0) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['Hello', 'there.'], 0) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['there.', 'Hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('buddy', 'goodbye'), 2) 
+                     (('buddy', 'hello'), 3) 
+                     (('goodbye', 'hello'), 2) 
+                     (('hello', 'there'), 2) 
+--END TIME-- 0.00300002098083 seconds --- 
+ 
+
+--START TIME: 1478548683.51 
+     --INPUT-- 
+                     '. . a' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['. . a'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548683.53 
+     --INPUT-- 
+                     '. . a' {'periodsToBreaks': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ['. . a'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548683.56 
+     --INPUT-- 
+                     '. A B\n. A B C\n. A B C D' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['. A B', '. A B C', '. A B C D'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', 'A', 'B'], 0) 
+                     (['A', 'B', '.'], 0) 
+                     (['B', '.', 'A'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', 'A', 'B'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', '.'], 0) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', '.', 'A'], 0) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('a', 'b'), 3) 
+                     (('a', 'c'), 2) 
+                     (('b', 'c'), 2) 
+--END TIME-- 0.0019998550415 seconds --- 
+ 
+
+--START TIME: 1478548683.58 
+     --INPUT-- 
+                     'Hello world. This is a test\nhopefully it turns out okay' {'periodsToBreaks': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ['Hello world.', 'This is a test hopefully it turns out okay'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Hello', 'world.'], 0) 
+                     (['world.', 'Hello'], 0) 
+                     (['This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay'], 1) 
+                     (['is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This'], 1) 
+                     (['a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is'], 1) 
+                     (['test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a'], 1) 
+                     (['hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test'], 1) 
+                     (['it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully'], 1) 
+                     (['turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it'], 1) 
+                     (['out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns'], 1) 
+                     (['okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is'], 1) 
+                     (['Hello', 'world.'], 0) 
+                     (['hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test'], 1) 
+                     (['is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This'], 1) 
+                     (['it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully'], 1) 
+                     (['okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out'], 1) 
+                     (['out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns'], 1) 
+                     (['test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a'], 1) 
+                     (['This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay'], 1) 
+                     (['turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it'], 1) 
+                     (['world.', 'Hello'], 0) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548683.61 
+     --INPUT-- 
+                     "It's very nice to be footloose. \nWith just a toothbrush and a comb.\n" {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ["It's very nice to be footloose. ", 'With just a toothbrush and a comb.', ''] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548683.64 
+     --INPUT-- 
+                     "It's very nice to be footloose. \nWith just a toothbrush and a comb.\n" {'periodsToBreaks': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ["It's very nice to be footloose.", ' With just a toothbrush and a comb.', ''] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548683.67 
+     --INPUT-- 
+                     'hello here, hello there, hello everywhere' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello here, hello there, hello everywhere'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'here,', 'hello', 'there,', 'hello', 'everywhere'], 0) 
+                     (['here,', 'hello', 'there,', 'hello', 'everywhere', 'hello'], 0) 
+                     (['hello', 'there,', 'hello', 'everywhere', 'hello', 'here,'], 0) 
+                     (['there,', 'hello', 'everywhere', 'hello', 'here,', 'hello'], 0) 
+                     (['hello', 'everywhere', 'hello', 'here,', 'hello', 'there,'], 0) 
+                     (['everywhere', 'hello', 'here,', 'hello', 'there,', 'hello'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['everywhere', 'hello', 'here,', 'hello', 'there,', 'hello'], 0) 
+                     (['hello', 'everywhere', 'hello', 'here,', 'hello', 'there,'], 0) 
+                     (['hello', 'here,', 'hello', 'there,', 'hello', 'everywhere'], 0) 
+                     (['hello', 'there,', 'hello', 'everywhere', 'hello', 'here,'], 0) 
+                     (['here,', 'hello', 'there,', 'hello', 'everywhere', 'hello'], 0) 
+                     (['there,', 'hello', 'everywhere', 'hello', 'here,', 'hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548683.7 
+     --INPUT-- 
+                     'hello here\nhello here again\nhello again' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello here', 'hello here again', 'hello again'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'here'], 0) 
+                     (['here', 'hello'], 0) 
+                     (['hello', 'here', 'again'], 1) 
+                     (['here', 'again', 'hello'], 1) 
+                     (['again', 'hello', 'here'], 1) 
+                     (['hello', 'again'], 2) 
+                     (['again', 'hello'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['again', 'hello'], 2) 
+                     (['again', 'hello', 'here'], 1) 
+                     (['hello', 'again'], 2) 
+                     (['hello', 'here'], 0) 
+                     (['hello', 'here', 'again'], 1) 
+                     (['here', 'again', 'hello'], 1) 
+                     (['here', 'hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('again', 'hello'), 2) 
+                     (('hello', 'here'), 2) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548683.73 
+     --INPUT-- 
+                     'hello hello hello\nhello hello' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello hello hello', 'hello hello'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548683.76 
+     --INPUT-- 
+                     'to be or not to be' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['to be or not to be'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['to', 'be', 'or', 'not', 'to', 'be'], 0) 
+                     (['be', 'or', 'not', 'to', 'be', 'to'], 0) 
+                     (['or', 'not', 'to', 'be', 'to', 'be'], 0) 
+                     (['not', 'to', 'be', 'to', 'be', 'or'], 0) 
+                     (['to', 'be', 'to', 'be', 'or', 'not'], 0) 
+                     (['be', 'to', 'be', 'or', 'not', 'to'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['be', 'or', 'not', 'to', 'be', 'to'], 0) 
+                     (['be', 'to', 'be', 'or', 'not', 'to'], 0) 
+                     (['not', 'to', 'be', 'to', 'be', 'or'], 0) 
+                     (['or', 'not', 'to', 'be', 'to', 'be'], 0) 
+                     (['to', 'be', 'or', 'not', 'to', 'be'], 0) 
+                     (['to', 'be', 'to', 'be', 'or', 'not'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548683.79 
+     --INPUT-- 
+                     '. A B\n. A B C\n. A B C D' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['. A B', '. A B C', '. A B C D'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', 'A', 'B'], 0) 
+                     (['A', 'B', '.'], 0) 
+                     (['B', '.', 'A'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', 'A', 'B'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', '.'], 0) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', '.', 'A'], 0) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('a', 'b'), 3) 
+                     (('a', 'c'), 2) 
+                     (('b', 'c'), 2) 
+--END TIME-- 0.0019998550415 seconds --- 
+ 
+
+--START TIME: 1478548683.82 
+     --INPUT-- 
+                     'a bad\ncat barks.' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['a bad', 'cat barks.'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['a', 'bad'], 0) 
+                     (['bad', 'a'], 0) 
+                     (['cat', 'barks.'], 1) 
+                     (['barks.', 'cat'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'bad'], 0) 
+                     (['bad', 'a'], 0) 
+                     (['barks.', 'cat'], 1) 
+                     (['cat', 'barks.'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548683.85 
+     --INPUT-- 
+                     'This is not a sentence.\nNeither is this.' {'ignoreWords': ['is.']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This is not a sentence.', 'Neither is this.'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['is', 'not', 'a', 'sentence.', 'This'], 0) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['is', 'this.', 'Neither'], 1) 
+                     (['this.', 'Neither', 'is'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['is', 'not', 'a', 'sentence.', 'This'], 0) 
+                     (['is', 'this.', 'Neither'], 1) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['this.', 'Neither', 'is'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548683.88 
+     --INPUT-- 
+                     'This is not a sentence.\nNeither is this.' {'ignoreWords': ['is']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This is not a sentence.', 'Neither is this.'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['this.', 'Neither', 'is'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['this.', 'Neither', 'is'], 1) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548683.91 
+     --INPUT-- 
+                     'hello hello\nhello hello' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello hello', 'hello hello'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548683.94 
+     --INPUT-- 
+                     '#!good morning' {'ignoreWords': ['!good']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['#!good morning'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['#!good', 'morning'], 0) 
+                     (['morning', '#!good'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['#!good', 'morning'], 0) 
+                     (['morning', '#!good'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548683.97 
+     --INPUT-- 
+                     'go!od morning-!' {'ignoreWords': ['good']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['go!od morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['morning-!', 'go!od'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['morning-!', 'go!od'], 0) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548684.0 
+     --INPUT-- 
+                     '#!good morning-!' {'ignoreWords': ['!GoOd']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['#!good morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['#!good', 'morning-!'], 0) 
+                     (['morning-!', '#!good'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['#!good', 'morning-!'], 0) 
+                     (['morning-!', '#!good'], 0) 
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478548684.04 
+     --INPUT-- 
+                     '?!good morning-!' {'ignoreWords': ['!GoOd']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['?!good morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['?!good', 'morning-!'], 0) 
+                     (['morning-!', '?!good'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['?!good', 'morning-!'], 0) 
+                     (['morning-!', '?!good'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548684.06 
+     --INPUT-- 
+                     '?!go!!!od morning-!' {'ignoreWords': ['!GoOd']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['?!go!!!od morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['?!go!!!od', 'morning-!'], 0) 
+                     (['morning-!', '?!go!!!od'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['?!go!!!od', 'morning-!'], 0) 
+                     (['morning-!', '?!go!!!od'], 0) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548684.09 
+     --INPUT-- 
+                     'This pair? is good.\n So is this pair and that pair' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This pair? is good.', ' So is this pair and that pair'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('is', 'pair'), 2) 
+                     (('is', 'this'), 2) 
+                     (('pair', 'this'), 2) 
+--END TIME-- 0.00200009346008 seconds --- 
+ 
+
+--START TIME: 1478548684.13 
+     --INPUT-- 
+                     'CS is cool' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['CS is cool'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['CS', 'is', 'cool'], 0) 
+                     (['is', 'cool', 'CS'], 0) 
+                     (['cool', 'CS', 'is'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['cool', 'CS', 'is'], 0) 
+                     (['CS', 'is', 'cool'], 0) 
+                     (['is', 'cool', 'CS'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478548684.16 
+     --INPUT-- 
+                     'a b\na b c\na b c d' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['a b', 'a b c', 'a b c d'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['a', 'b'], 0) 
+                     (['b', 'a'], 0) 
+                     (['a', 'b', 'c'], 1) 
+                     (['b', 'c', 'a'], 1) 
+                     (['c', 'a', 'b'], 1) 
+                     (['a', 'b', 'c', 'd'], 2) 
+                     (['b', 'c', 'd', 'a'], 2) 
+                     (['c', 'd', 'a', 'b'], 2) 
+                     (['d', 'a', 'b', 'c'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'b'], 0) 
+                     (['a', 'b', 'c'], 1) 
+                     (['a', 'b', 'c', 'd'], 2) 
+                     (['b', 'a'], 0) 
+                     (['b', 'c', 'a'], 1) 
+                     (['b', 'c', 'd', 'a'], 2) 
+                     (['c', 'a', 'b'], 1) 
+                     (['c', 'd', 'a', 'b'], 2) 
+                     (['d', 'a', 'b', 'c'], 2) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('a', 'b'), 3) 
+                     (('a', 'c'), 2) 
+                     (('b', 'c'), 2) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478548684.19 
+     --INPUT-- 
+                     'This pair? is good.\n So is this pair and that pair' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This pair? is good.', ' So is this pair and that pair'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('is', 'pair'), 2) 
+                     (('is', 'this'), 2) 
+                     (('pair', 'this'), 2) 
+--END TIME-- 0.00200009346008 seconds --- 
+ 
+
+--START TIME: 1478548684.23 
+     --INPUT-- 
+                     '' {'listPairs': True} 
+     --INFO--     Length of document is zero 
+
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553560.61 
+     --INPUT-- 
+                     "Design is hard.\nLet's just implement." {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Design is hard.', "Let's just implement."] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['is', 'hard.', 'Design'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (["Let's", 'just', 'implement.'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (['implement.', "Let's", 'just'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (['implement.', "Let's", 'just'], 1) 
+                     (['is', 'hard.', 'Design'], 0) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (["Let's", 'just', 'implement.'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553560.64 
+     --INPUT-- 
+                     "Design is hard.\nLet's just implement." {'ignoreWords': ['is']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Design is hard.', "Let's just implement."] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (["Let's", 'just', 'implement.'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (['implement.', "Let's", 'just'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (['implement.', "Let's", 'just'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (["Let's", 'just', 'implement.'], 1) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478553560.66 
+     --INPUT-- 
+                     "Design is hard.\nLet's just implement." {'listPairs': True, 'ignoreWords': ['is']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Design is hard.', "Let's just implement."] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (["Let's", 'just', 'implement.'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (['implement.', "Let's", 'just'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['Design', 'is', 'hard.'], 0) 
+                     (['hard.', 'Design', 'is'], 0) 
+                     (['implement.', "Let's", 'just'], 1) 
+                     (['just', 'implement.', "Let's"], 1) 
+                     (["Let's", 'just', 'implement.'], 1) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478553560.69 
+     --INPUT-- 
+                     'Hello there.\nHello there, buddy.\nHello and goodbye, buddy.\nHello is like buddy Goodbye!' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['Hello there.', 'Hello there, buddy.', 'Hello and goodbye, buddy.', 'Hello is like buddy Goodbye!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Hello', 'there.'], 0) 
+                     (['there.', 'Hello'], 0) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['Hello', 'there.'], 0) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['there.', 'Hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('buddy', 'goodbye'), 2) 
+                     (('buddy', 'hello'), 3) 
+                     (('goodbye', 'hello'), 2) 
+                     (('hello', 'there'), 2) 
+--END TIME-- 0.00200009346008 seconds --- 
+ 
+
+--START TIME: 1478553560.73 
+     --INPUT-- 
+                     'Hello there.  Hello there, buddy.    Hello and goodbye, buddy. Hello is like buddy Goodbye!' {'periodsToBreaks': True, 'listPairs': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ['Hello there.', ' Hello there, buddy.', '   Hello and goodbye, buddy.', 'Hello is like buddy Goodbye!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Hello', 'there.'], 0) 
+                     (['there.', 'Hello'], 0) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'goodbye,', 'buddy.', 'Hello'], 2) 
+                     (['buddy', 'Goodbye!', 'Hello', 'is', 'like'], 3) 
+                     (['buddy.', 'Hello', 'and', 'goodbye,'], 2) 
+                     (['buddy.', 'Hello', 'there,'], 1) 
+                     (['Goodbye!', 'Hello', 'is', 'like', 'buddy'], 3) 
+                     (['goodbye,', 'buddy.', 'Hello', 'and'], 2) 
+                     (['Hello', 'and', 'goodbye,', 'buddy.'], 2) 
+                     (['Hello', 'is', 'like', 'buddy', 'Goodbye!'], 3) 
+                     (['Hello', 'there,', 'buddy.'], 1) 
+                     (['Hello', 'there.'], 0) 
+                     (['is', 'like', 'buddy', 'Goodbye!', 'Hello'], 3) 
+                     (['like', 'buddy', 'Goodbye!', 'Hello', 'is'], 3) 
+                     (['there,', 'buddy.', 'Hello'], 1) 
+                     (['there.', 'Hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('buddy', 'goodbye'), 2) 
+                     (('buddy', 'hello'), 3) 
+                     (('goodbye', 'hello'), 2) 
+                     (('hello', 'there'), 2) 
+--END TIME-- 0.00400018692017 seconds --- 
+ 
+
+--START TIME: 1478553560.77 
+     --INPUT-- 
+                     '. . a' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['. . a'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553560.8 
+     --INPUT-- 
+                     '. . a' {'periodsToBreaks': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ['. . a'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', '.', 'a'], 0) 
+                     (['.', 'a', '.'], 0) 
+                     (['a', '.', '.'], 0) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478553560.83 
+     --INPUT-- 
+                     '. A B\n. A B C\n. A B C D' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['. A B', '. A B C', '. A B C D'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', 'A', 'B'], 0) 
+                     (['A', 'B', '.'], 0) 
+                     (['B', '.', 'A'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', 'A', 'B'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', '.'], 0) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', '.', 'A'], 0) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('a', 'b'), 3) 
+                     (('a', 'c'), 2) 
+                     (('b', 'c'), 2) 
+--END TIME-- 0.00300002098083 seconds --- 
+ 
+
+--START TIME: 1478553560.87 
+     --INPUT-- 
+                     'Hello world. This is a test\nhopefully it turns out okay' {'periodsToBreaks': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ['Hello world.', 'This is a test hopefully it turns out okay'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['Hello', 'world.'], 0) 
+                     (['world.', 'Hello'], 0) 
+                     (['This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay'], 1) 
+                     (['is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This'], 1) 
+                     (['a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is'], 1) 
+                     (['test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a'], 1) 
+                     (['hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test'], 1) 
+                     (['it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully'], 1) 
+                     (['turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it'], 1) 
+                     (['out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns'], 1) 
+                     (['okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is'], 1) 
+                     (['Hello', 'world.'], 0) 
+                     (['hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test'], 1) 
+                     (['is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This'], 1) 
+                     (['it', 'turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully'], 1) 
+                     (['okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out'], 1) 
+                     (['out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it', 'turns'], 1) 
+                     (['test', 'hopefully', 'it', 'turns', 'out', 'okay', 'This', 'is', 'a'], 1) 
+                     (['This', 'is', 'a', 'test', 'hopefully', 'it', 'turns', 'out', 'okay'], 1) 
+                     (['turns', 'out', 'okay', 'This', 'is', 'a', 'test', 'hopefully', 'it'], 1) 
+                     (['world.', 'Hello'], 0) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478553560.91 
+     --INPUT-- 
+                     "It's very nice to be footloose. \nWith just a toothbrush and a comb.\n" {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ["It's very nice to be footloose. ", 'With just a toothbrush and a comb.', ''] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+--END TIME-- 0.00100016593933 seconds --- 
+ 
+
+--START TIME: 1478553560.95 
+     --INPUT-- 
+                     "It's very nice to be footloose. \nWith just a toothbrush and a comb.\n" {'periodsToBreaks': True} 
+     --STEP--     periodToBreaks is on 
+          --INFO--     newlines, \n, were replaced with spaces ' ' 
+          --SPLITLINES BY PERIODS -- 
+                     ["It's very nice to be footloose.", ' With just a toothbrush and a comb.', ''] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'comb.', 'With', 'just', 'a', 'toothbrush', 'and'], 1) 
+                     (['a', 'toothbrush', 'and', 'a', 'comb.', 'With', 'just'], 1) 
+                     (['and', 'a', 'comb.', 'With', 'just', 'a', 'toothbrush'], 1) 
+                     (['be', 'footloose.', "It's", 'very', 'nice', 'to'], 0) 
+                     (['comb.', 'With', 'just', 'a', 'toothbrush', 'and', 'a'], 1) 
+                     (['footloose.', "It's", 'very', 'nice', 'to', 'be'], 0) 
+                     (["It's", 'very', 'nice', 'to', 'be', 'footloose.'], 0) 
+                     (['just', 'a', 'toothbrush', 'and', 'a', 'comb.', 'With'], 1) 
+                     (['nice', 'to', 'be', 'footloose.', "It's", 'very'], 0) 
+                     (['to', 'be', 'footloose.', "It's", 'very', 'nice'], 0) 
+                     (['toothbrush', 'and', 'a', 'comb.', 'With', 'just', 'a'], 1) 
+                     (['very', 'nice', 'to', 'be', 'footloose.', "It's"], 0) 
+                     (['With', 'just', 'a', 'toothbrush', 'and', 'a', 'comb.'], 1) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478553560.99 
+     --INPUT-- 
+                     'hello here, hello there, hello everywhere' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello here, hello there, hello everywhere'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'here,', 'hello', 'there,', 'hello', 'everywhere'], 0) 
+                     (['here,', 'hello', 'there,', 'hello', 'everywhere', 'hello'], 0) 
+                     (['hello', 'there,', 'hello', 'everywhere', 'hello', 'here,'], 0) 
+                     (['there,', 'hello', 'everywhere', 'hello', 'here,', 'hello'], 0) 
+                     (['hello', 'everywhere', 'hello', 'here,', 'hello', 'there,'], 0) 
+                     (['everywhere', 'hello', 'here,', 'hello', 'there,', 'hello'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['everywhere', 'hello', 'here,', 'hello', 'there,', 'hello'], 0) 
+                     (['hello', 'everywhere', 'hello', 'here,', 'hello', 'there,'], 0) 
+                     (['hello', 'here,', 'hello', 'there,', 'hello', 'everywhere'], 0) 
+                     (['hello', 'there,', 'hello', 'everywhere', 'hello', 'here,'], 0) 
+                     (['here,', 'hello', 'there,', 'hello', 'everywhere', 'hello'], 0) 
+                     (['there,', 'hello', 'everywhere', 'hello', 'here,', 'hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.0019998550415 seconds --- 
+ 
+
+--START TIME: 1478553561.03 
+     --INPUT-- 
+                     'hello here\nhello here again\nhello again' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello here', 'hello here again', 'hello again'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'here'], 0) 
+                     (['here', 'hello'], 0) 
+                     (['hello', 'here', 'again'], 1) 
+                     (['here', 'again', 'hello'], 1) 
+                     (['again', 'hello', 'here'], 1) 
+                     (['hello', 'again'], 2) 
+                     (['again', 'hello'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['again', 'hello'], 2) 
+                     (['again', 'hello', 'here'], 1) 
+                     (['hello', 'again'], 2) 
+                     (['hello', 'here'], 0) 
+                     (['hello', 'here', 'again'], 1) 
+                     (['here', 'again', 'hello'], 1) 
+                     (['here', 'hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('again', 'hello'), 2) 
+                     (('hello', 'here'), 2) 
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478553561.06 
+     --INPUT-- 
+                     'hello hello hello\nhello hello' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello hello hello', 'hello hello'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+                     (['hello', 'hello', 'hello'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.000999927520752 seconds --- 
+ 
+
+--START TIME: 1478553561.1 
+     --INPUT-- 
+                     'to be or not to be' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['to be or not to be'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['to', 'be', 'or', 'not', 'to', 'be'], 0) 
+                     (['be', 'or', 'not', 'to', 'be', 'to'], 0) 
+                     (['or', 'not', 'to', 'be', 'to', 'be'], 0) 
+                     (['not', 'to', 'be', 'to', 'be', 'or'], 0) 
+                     (['to', 'be', 'to', 'be', 'or', 'not'], 0) 
+                     (['be', 'to', 'be', 'or', 'not', 'to'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['be', 'or', 'not', 'to', 'be', 'to'], 0) 
+                     (['be', 'to', 'be', 'or', 'not', 'to'], 0) 
+                     (['not', 'to', 'be', 'to', 'be', 'or'], 0) 
+                     (['or', 'not', 'to', 'be', 'to', 'be'], 0) 
+                     (['to', 'be', 'or', 'not', 'to', 'be'], 0) 
+                     (['to', 'be', 'to', 'be', 'or', 'not'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.00200009346008 seconds --- 
+ 
+
+--START TIME: 1478553561.13 
+     --INPUT-- 
+                     '. A B\n. A B C\n. A B C D' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['. A B', '. A B C', '. A B C D'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['.', 'A', 'B'], 0) 
+                     (['A', 'B', '.'], 0) 
+                     (['B', '.', 'A'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['.', 'A', 'B'], 0) 
+                     (['.', 'A', 'B', 'C'], 1) 
+                     (['.', 'A', 'B', 'C', 'D'], 2) 
+                     (['A', 'B', '.'], 0) 
+                     (['A', 'B', 'C', '.'], 1) 
+                     (['A', 'B', 'C', 'D', '.'], 2) 
+                     (['B', '.', 'A'], 0) 
+                     (['B', 'C', '.', 'A'], 1) 
+                     (['B', 'C', 'D', '.', 'A'], 2) 
+                     (['C', '.', 'A', 'B'], 1) 
+                     (['C', 'D', '.', 'A', 'B'], 2) 
+                     (['D', '.', 'A', 'B', 'C'], 2) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('a', 'b'), 3) 
+                     (('a', 'c'), 2) 
+                     (('b', 'c'), 2) 
+--END TIME-- 0.00200009346008 seconds --- 
+ 
+
+--START TIME: 1478553561.18 
+     --INPUT-- 
+                     'a bad\ncat barks.' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['a bad', 'cat barks.'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['a', 'bad'], 0) 
+                     (['bad', 'a'], 0) 
+                     (['cat', 'barks.'], 1) 
+                     (['barks.', 'cat'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'bad'], 0) 
+                     (['bad', 'a'], 0) 
+                     (['barks.', 'cat'], 1) 
+                     (['cat', 'barks.'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.21 
+     --INPUT-- 
+                     'This is not a sentence.\nNeither is this.' {'ignoreWords': ['is.']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This is not a sentence.', 'Neither is this.'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['is', 'not', 'a', 'sentence.', 'This'], 0) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['is', 'this.', 'Neither'], 1) 
+                     (['this.', 'Neither', 'is'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['is', 'not', 'a', 'sentence.', 'This'], 0) 
+                     (['is', 'this.', 'Neither'], 1) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['this.', 'Neither', 'is'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.25 
+     --INPUT-- 
+                     'This is not a sentence.\nNeither is this.' {'ignoreWords': ['is']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This is not a sentence.', 'Neither is this.'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['this.', 'Neither', 'is'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'sentence.', 'This', 'is', 'not'], 0) 
+                     (['Neither', 'is', 'this.'], 1) 
+                     (['not', 'a', 'sentence.', 'This', 'is'], 0) 
+                     (['sentence.', 'This', 'is', 'not', 'a'], 0) 
+                     (['This', 'is', 'not', 'a', 'sentence.'], 0) 
+                     (['this.', 'Neither', 'is'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.29 
+     --INPUT-- 
+                     'hello hello\nhello hello' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['hello hello', 'hello hello'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 0) 
+                     (['hello', 'hello'], 1) 
+                     (['hello', 'hello'], 1) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.33 
+     --INPUT-- 
+                     '#!good morning' {'ignoreWords': ['!good']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['#!good morning'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['#!good', 'morning'], 0) 
+                     (['morning', '#!good'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['#!good', 'morning'], 0) 
+                     (['morning', '#!good'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.37 
+     --INPUT-- 
+                     'go!od morning-!' {'ignoreWords': ['good']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['go!od morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['morning-!', 'go!od'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['morning-!', 'go!od'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.41 
+     --INPUT-- 
+                     '#!good morning-!' {'ignoreWords': ['!GoOd']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['#!good morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['#!good', 'morning-!'], 0) 
+                     (['morning-!', '#!good'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['#!good', 'morning-!'], 0) 
+                     (['morning-!', '#!good'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.44 
+     --INPUT-- 
+                     '?!good morning-!' {'ignoreWords': ['!GoOd']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['?!good morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['?!good', 'morning-!'], 0) 
+                     (['morning-!', '?!good'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['?!good', 'morning-!'], 0) 
+                     (['morning-!', '?!good'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.48 
+     --INPUT-- 
+                     '?!go!!!od morning-!' {'ignoreWords': ['!GoOd']} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['?!go!!!od morning-!'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['?!go!!!od', 'morning-!'], 0) 
+                     (['morning-!', '?!go!!!od'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['?!go!!!od', 'morning-!'], 0) 
+                     (['morning-!', '?!go!!!od'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.52 
+     --INPUT-- 
+                     'This pair? is good.\n So is this pair and that pair' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This pair? is good.', ' So is this pair and that pair'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('is', 'pair'), 2) 
+                     (('is', 'this'), 2) 
+                     (('pair', 'this'), 2) 
+--END TIME-- 0.0019998550415 seconds --- 
+ 
+
+--START TIME: 1478553561.57 
+     --INPUT-- 
+                     'CS is cool' {} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['CS is cool'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['CS', 'is', 'cool'], 0) 
+                     (['is', 'cool', 'CS'], 0) 
+                     (['cool', 'CS', 'is'], 0) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['cool', 'CS', 'is'], 0) 
+                     (['CS', 'is', 'cool'], 0) 
+                     (['is', 'cool', 'CS'], 0) 
+--END TIME-- 0.0 seconds --- 
+ 
+
+--START TIME: 1478553561.61 
+     --INPUT-- 
+                     'a b\na b c\na b c d' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['a b', 'a b c', 'a b c d'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['a', 'b'], 0) 
+                     (['b', 'a'], 0) 
+                     (['a', 'b', 'c'], 1) 
+                     (['b', 'c', 'a'], 1) 
+                     (['c', 'a', 'b'], 1) 
+                     (['a', 'b', 'c', 'd'], 2) 
+                     (['b', 'c', 'd', 'a'], 2) 
+                     (['c', 'd', 'a', 'b'], 2) 
+                     (['d', 'a', 'b', 'c'], 2) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['a', 'b'], 0) 
+                     (['a', 'b', 'c'], 1) 
+                     (['a', 'b', 'c', 'd'], 2) 
+                     (['b', 'a'], 0) 
+                     (['b', 'c', 'a'], 1) 
+                     (['b', 'c', 'd', 'a'], 2) 
+                     (['c', 'a', 'b'], 1) 
+                     (['c', 'd', 'a', 'b'], 2) 
+                     (['d', 'a', 'b', 'c'], 2) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('a', 'b'), 3) 
+                     (('a', 'c'), 2) 
+                     (('b', 'c'), 2) 
+--END TIME-- 0.00200009346008 seconds --- 
+ 
+
+--START TIME: 1478553561.65 
+     --INPUT-- 
+                     'This pair? is good.\n So is this pair and that pair' {'listPairs': True} 
+     --STEP--     Splitting the document by newlines 
+          --SPLITLINES BY NEWLINE -- 
+                     ['This pair? is good.', ' So is this pair and that pair'] 
+     --STEP--     About to create the shifts for the document 
+          --SHIFTS--     
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+     --STEP--     About to Alphabetize the shifts  
+          --ALPHABETIZED--      
+                     (['and', 'that', 'pair', 'So', 'is', 'this', 'pair'], 1) 
+                     (['good.', 'This', 'pair?', 'is'], 0) 
+                     (['is', 'good.', 'This', 'pair?'], 0) 
+                     (['is', 'this', 'pair', 'and', 'that', 'pair', 'So'], 1) 
+                     (['pair', 'and', 'that', 'pair', 'So', 'is', 'this'], 1) 
+                     (['pair', 'So', 'is', 'this', 'pair', 'and', 'that'], 1) 
+                     (['pair?', 'is', 'good.', 'This'], 0) 
+                     (['So', 'is', 'this', 'pair', 'and', 'that', 'pair'], 1) 
+                     (['that', 'pair', 'So', 'is', 'this', 'pair', 'and'], 1) 
+                     (['this', 'pair', 'and', 'that', 'pair', 'So', 'is'], 1) 
+                     (['This', 'pair?', 'is', 'good.'], 0) 
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+                     (('is', 'pair'), 2) 
+                     (('is', 'this'), 2) 
+                     (('pair', 'this'), 2) 
+--END TIME-- 0.00200009346008 seconds --- 
+ 
+
+--START TIME: 1478553561.7 
+     --INPUT-- 
+                     '' {'listPairs': True} 
+     --INFO--     Length of document is zero 
+
+     --STEP--     listPairs is on 
+          --LISTPAIRS--      
+--END TIME-- 0.0 seconds --- 
+ 

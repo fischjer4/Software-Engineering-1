@@ -1,0 +1,22 @@
+Software Engineering l 
+Jeremy Fischer
+Assignment 2
+
+To improve the testability of kwic I made three architectural changes. I first decomposed my functions. 
+I went back through my code and made sure that each of my functions did one thing and one thing only. 
+For example, inside of the checkPairs function I was also alphabetizing them, so I took the alphabetizing out and 
+placed that in its own function. This allows my functions to be tested component wise, and not have the overhead 
+of x, y, and z being done as well when the function is called. The architecture was changed from having 3 heavy functions 
+that do everything, to being split up into a handful of functions that each have a singular job (the way it should be). 
+The next two modifications change the architecture by attaching debugging features onto all of the functions to better 
+understand what is going on behind the scenes when the program is running.
+
+The second thing I did was implement try excepts throughout my code covering all major operations. This increases the 
+system’s testability by allowing the program to fail peacefully and output details about the problem, instead of just 
+crashing and possibly outputting long confusing error messages/traces. 
+
+The third thing I did was log all steps and outputs 
+to a logForTestKwic.txt file. This greatly increases the testability by allowing the developer to go into the txt file and 
+see what the input was, what step the program was at, what got outputted, any error messages that were outputted, and the 
+time it took to run. As a matter of fact I used this when I modified testkwic.py and my output wasn't correct and I couldn't find out why. I remembered that I
+output all of the detials of the program to logForTestKwic.txt, and it actually helped me easily solve my problem.

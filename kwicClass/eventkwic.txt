@@ -1,0 +1,57 @@
+Jeremy Fischer
+Software Engineering 1
+Assignment 3
+11/28/2016
+
+The structure of my Kwic finite state machine was built like a tree. The starting state, “options”, is the root where the other states are branches. 
+Like a tree, there are a few main branches, but each main branch may have a few small branches branching off or it. All branches lead back to “options”,
+ the root.  The main branches are callIndex, callReset, callAddText, and callListPairs. These are my four main states that options can call. Each of 
+these main braches can then branch out into the other “mini” states that they need to to finish the manipulation of data that they were invoked to do. 
+Once they finish they are usually directed back to the options state where the finite state machine then waits for the next big event to be triggered. 
+By printing out the printLog() you can see that my Kwic.py creates the shifts for each line when addText() is called and then places those new shifts 
+into the big shift list. Kwic.py doesn’t generate the whole index over again every time a new piece of text is added. A new twist that was added to this
+assignment due to the ability of incremental indexing was the possibility for running text (when addText() doesn’t end in a period if periods to breaks
+is on, a new line character, or has a space at the end). When addText() is called if there is running text then it gets recorded. By printing and viewing 
+the printLog() it is possible to see that If index is called and there is running text present, then the event “completeRunningIndex” is called to take 
+care of that dilemma. My Kwic finite state machine helps make sure that kwic.py does the right thing by verifying that it has the right to enter and 
+initiate certain functions/manipulation of data. Kwic’s finite state machine does that by checking the kwic.fsm that was given to event spec and making 
+sure that the event that was triggered is a valid move based off of what state the program is currently in. My Kwic finite state machine also is very
+useful in debugging purposes by printing out the program’s trace to the screen allowing the user to follow the program’s execution all the way up to 
+where the problem was encountered. Here is an example of a printLog() of the following input.
+
+kc = Kwic(ignoreWords=["the"])
+kc.addText("This is some text.\n")
+kc.addText("By the old hotel at lakeside, looking southern cross the sea.\n There's ")
+kc.addText("a bright campfire a burning and I know it burns for me.\n For the wind is in the ")
+
+x = kc.index()
+v = kc.listPairs()
+kc.fsm.printLog()
+
+Output:
+  STEP #0: callConstructor --> options
+  STEP #1: callAddText --> addingText
+  STEP #2: regularBreaks --> regBreaks
+  STEP #3: breakingRegularly --> startShifts
+  STEP #4: splitWords --> shifting
+  STEP #5: finishedShift --> options
+  STEP #6: callAddText --> addingText
+  STEP #7: regularBreaks --> regBreaks
+  STEP #8: runningText --> options
+  STEP #9: callAddText --> addingText
+  STEP #10: regularBreaks --> regBreaks
+  STEP #11: runningText --> options
+  STEP #12: callIndex --> indexing
+  STEP #13: completeRunningIndex --> regBreaks
+  STEP #14: breakingRegularly --> startShifts
+  STEP #15: splitWords --> shifting
+  STEP #16: finishedShift --> options
+  STEP #17: printingIndex --> options
+  STEP #18: callListPairs --> listingPairs
+  STEP #19: completeListPairs --> findPairs
+  STEP #20: finishedCheckingPairs --> listingPairs
+  STEP #21: printLP --> options
+
+You can see that there is running text in the second and third addText() call. My finite state machine pringLog() lets  me know that this was taken
+care of accordingly by step #13, the call to completeRunningIndex.  You can also see that “by taken care of,” I mean completeRunningIndex fires 
+off the regBreaks state and sends it the running text.

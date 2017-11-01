@@ -1,0 +1,44 @@
+#'event name' -> 'name of state that the following events will come from (not in program)
+# 'state: options' is your base, when a set of instructions is finished execution goes
+# back to options and the program then chooses from the list of options
+
+begin: options
+
+state: options
+callReset -> options
+callAddText -> addingText
+callListPairs -> listingPairs
+callIndex -> indexing
+callConstructor -> options
+printingIndex -> options
+
+state: indexing
+completeRunningIndexWithP -> pBreaks
+completeRunningIndex -> regBreaks
+printingIndex -> options
+
+state: addingText
+periodsToBreaks -> pBreaks 
+regularBreaks -> regBreaks
+breakingRegularly -> startShifts
+
+state: startShifts
+splitWords -> shifting
+
+state: shifting
+finishedShift -> options
+
+state: pBreaks
+runningText -> options
+breakingByPeriods -> startShifts
+
+state: regBreaks
+runningText -> options
+breakingRegularly -> startShifts
+
+state: listingPairs
+completeListPairs -> findPairs
+printLP -> options
+
+state: findPairs
+finishedCheckingPairs -> listingPairs

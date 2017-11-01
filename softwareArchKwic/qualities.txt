@@ -1,0 +1,47 @@
+performance
+	latency (of web request types)
+	throughput
+	memory use (availability)
+
+security
+	penetration testing
+	fuzzing & crashes
+	static analysis
+
+scalability
+	how well does it work as N goes up?
+	integer overflow
+
+availability / reliability
+	uptime
+	MTBF mean time between failures
+	MRT mean repair time
+
+usability
+	user tests
+	"CHI" type measures (Burnett)
+	trained vs untrained
+	experienced vs inexperienced
+	experiences / untrained
+
+modifiability / maintainability
+	      encapsulation / module breakdown
+	      count function calls / data accesses between modules
+	      flow in / flow out
+	      average length
+	      cyclomatic complexity
+	      		 ~ 50 github projects
+			 LOC => bugs/LOC
+		static analysis
+
+testability
+	allow indiviudal parts to be tested individually
+	insert interfaces / indirection -- take more processed inputs
+	logs / protect the logs
+	mock / stubs
+	avg. cyclomatic complexity / avg. LOC
+	test coverage / time
+	how hard to induce all fault conditions
+	- observability
+	- controllabiltiy
+	never do your main testing on real hardware

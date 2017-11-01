@@ -1,0 +1,32 @@
+Software Engineering l 
+Jeremy Fischer
+Assignment 2
+
+The majority of my speed enhancements came from eliminating overhead by using built in functions as black boxes instead of writing my own, 
+reducing function calls, and changing loops to break after the info needed is found. My overall tactic in modifying my architecture to 
+improve speed was to take advantage of built in python functions versus writing solutions on my own. One of the things I did was calculate 
+the length of the document once at the beginning of the program, and passed that variable around to all functions that needed it. 
+This speeds my fastkwic up quite a bit, because my original kwic calculates the length of the document about 10 times, and as the length 
+of the document goes up this operation becomes more expensive than one might think. I also choose to use regular expressions as a black 
+box when computing part of listPairs. In my original kwic I manually iterated through three nested for loops, whereas in my fast kwic I let
+the regular expressions do the heavy lifting stage instead. In my alphabetization I implemented insertion sort. In my original kwic’s 
+alphabetization, a for loop iterates through the length of shiftList and sends the index of the current shift and the entire shiftList 
+to insert() to be inserted. As the document size increases shiftList becomes exponentially bigger. I reduced the overhead of this process 
+by bringing the insert code into the alphabetization function. This way the entire shiftList doesn’t have to be sent to insert len(shiftList) times. 
+
+Loyce's Ulysses, Proust's, and Chesterton all took too much time for me to repeatedly analyze in comparison between my original kwic and my 
+fastkwic. Instead I cut Proust down by 75% and compared them using that shorter version of Proust. This amount of text was still a 
+good measure to compare the speeds between the two programs, because the differences in their time were now in seconds instead of 
+milliseconds when I was using the toCheck.txt. To validate the output was correct I wrote the output to a file. However, there was 
+no way to truly validate that my output was correct when running Proust, because I didn’t have a correct version of the shifts and listPairs to compare 
+my output against. I was only able to make sure that there was indeed output in shifts and listPairs. However, my output for my kwic
+and fastkwic matched, and they both have correct outputs for toCheck.txt, so I assumed that they were correct. When I ran fastkwic
+with Proust and just periodTobreaks and not listPairs, fastkwic was only faster than kwic by a few seconds. But when I ran fastkwic
+with Proust and periodTobreaks and listPairs, fastkwic was a lot faster than kwic. This proves that black boxing listPairs by using
+regular expressions for part of it truly did reduce the overhead of the function.
+
+One of the hardest parts about increasing the speed on this assignment was the requirement of “sorting must be case insensitive”. I 
+manually implemented insertion sort, which looked really messy because I had to access the ith element of the 0th element of the jth shift.
+I wanted to instead black box my entire sorting by using regular expressions and list comprehensions, but I kept running into the issue of 
+case insensitivity. By the time I got the new sort to work with case insensitivity it was just as big of a mess as my original insertion sort, 
+and wasn’t completely correct. However, with case sensitivity the code was clean and the entire output was correct.
